@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="demo.php" method="post">
+        <fieldset>
+            <legend>Ihre Anfrage</legend>
+            <label for ="id_name">Name:</label>
+            <input id="id_name" type="text" name="name">
+            <br>
+            <label for="id_email">Absender:</label>
+            <input id="id_email" type="email" name="email" required>
+            <br>
+            <label for="id_nachricht">Nachricht:</label>
+            <br>
+            <textarea id="id_nachricht" name="nachricht" rows="2"></textarea>
+
+            <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Absenden">
+
+        </fieldset>
+    </form>
+</body>
+</html>
