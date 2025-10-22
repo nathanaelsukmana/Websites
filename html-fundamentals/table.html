@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<body>
+<table style="border: 1px solid black;"> <!-- solid = full line -->
+    <colgroup>
+        <col span="2" style="background-color: antiquewhite"> <!-- span = "2" == first and second row and column -->
+        <col style="background-color: red">
+    </colgroup>
+    <thead>
+    <tr>
+        <th colspan="2">Name</th><!-- colspan = 2 cells merge -->
+        <th>Nationality</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Jek</td>
+        <td>Alexander</td>
+        <td>Indonesia</td>
+    </tr>
+    <tr>
+        <td>Didid</td>
+        <td>Celuler</td>
+        <td>Indonesia</td>
+
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td rowspan="2">Status</td>
+        <td>xxxx</td>
+        <td rowspan="2">Indonesia</td>
+    </tr>
+    <tr>
+        <td>xxxx</td>
+    </tr>
+
+    </tfoot>
+</table>
+</body>
+</html>
