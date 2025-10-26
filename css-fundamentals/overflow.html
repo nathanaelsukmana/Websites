@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+    body{
+    margin: 0px; /*fill the width*/
+    }
+    div{
+    background-color: pink;
+    }
+    p{
+    margin: 0px;
+    }
+
+    .test1{
+    height: 100px; /*adjust height */
+    background-color: lightsalmon;
+    width: 700px;
+    margin: 10px 20px 10px 20px;
+        overflow: auto; /* can scroll too, mode: hidden and scroll*/
+    }
+
+    .test2{ /* top right bottom left */
+    padding: 10px 5px 10px 5px;
+    margin: 20px 10px 10px 10px; /*take the largest margin*/
+    }
+    </style>
+</head>
+<body>
+<div class="test1">
+    <p>I was tryna warn you, but it seem like you don't care
+        And it's fine, that's fair, yeah, I would never care
+        I don't need to see, yeah, I don't need to hear
+        I don't wanna talk to you, yeah, I don't want you near
+
+        I was tryna warn you, but it seem like you don't care
+        And it's fine, that's fair, yeah, I would never care
+        I don't need to see, yeah, I don't need to hear
+        I don't wanna talk to you, yeah, I don't want you near
+
+        I was tryna warn you, but it seem like you don't care
+        And it's fine, that's fair, yeah, I would never care
+        I don't need to see, yeah, I don't need to hear
+        I don't wanna talk to you, yeah, I don't want you near</p>
+</div>
+<div class="test2">
+    <p>Testing 2</p>
+</div>
+</body>
+</html>

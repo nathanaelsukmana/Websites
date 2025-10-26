@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a[target]{
+            color: seagreen;
+        }
+
+        a[target="_blank"]{
+            color: red;
+        }
+
+        p[title~="test"]{ /* take all test with spacing*/
+            color: mediumpurple;
+        }
+
+        p[title|="test"]{ /*att that have test value or value with - */
+            background-color: mediumpurple;
+        }
+
+        p[title^="att"]{ /* value with att in the first */
+            background-color: blanchedalmond;
+        }
+
+        p[title*="test"]{ /* take all value no matter what*/
+            font-weight: bold
+        }
+
+        [title*="test"]{
+            font-family: sans-serif;
+        }
+
+        #att{
+            font-style: italic;
+         }
+    </style>
+</head>
+<body>
+<a href="" target="_blank"> Example 1</a>
+<a href="" >Example 2</a>
+<a href="" target>Example 3</a>
+<a href="" >Example 4</a>
+
+<p title="test att">Chosen one</p>
+<p title="testatt">Chosen one</p>
+<p title="test-att">Chosen one</p>
+
+<p title="test att">^ Value</p>
+<p title="att test">^ Value</p>
+
+<p title="att-test" id="att">* Value</p>
+
+</body>
+</html>

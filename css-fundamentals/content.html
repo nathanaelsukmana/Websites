@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+    <style>
+
+        .content{
+            content: "Replace?"; /* nope */
+        }
+        /*
+        .content {
+            content: url("img.png");
+        }*/
+
+        .content:after{
+            content: "--continues";
+        }
+
+        .content:before{
+            content: "TESTING---";
+        }
+    </style>
+</head>
+<body>
+    <p class="content">The Content</p>
+</body>
+</html>

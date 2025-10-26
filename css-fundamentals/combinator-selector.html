@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinator</title>
+
+    <!-- descendant selector use space = chose all p element in div-->
+    <style>
+        div p{
+        color: pink;
+    }
+        div > p{ /* child selector = chose direct element/child in div*/
+            color: blue;
+        }
+
+        div + p{ /* adjacent sibling selector = chose one element after div (gotta delete ~ if wanna see)*/
+            color: red;
+        }
+
+        div ~ p{ /* general sibling selector = siblings from div (after) */
+            color: seagreen;
+        }
+    </style>
+
+
+</head>
+<body>
+    <p>Unchosen</p>
+    <div>
+        <article>
+            <p>Chosen</p>
+        </article>
+        <p>Chosen but Special</p>
+    </div>
+<p>Last choice</p>
+    <p>Unchosen 1</p>
+<p>Unchosen 2</p>
+</body>
+</html>

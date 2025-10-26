@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <style>
+        h1::before{
+            content: counter(title) ". ";
+        }
+
+        h2::before{
+            content: counter(title) "." counter(content) ". ";
+        }
+
+        h1{
+            counter-increment: title 1;
+            counter-reset: content;
+        }
+
+        h2{
+            counter-increment: content 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+<h2>Content</h2>
+<h2>Content</h2>
+
+    <h1>Title</h1>
+    <h2>Content</h2>
+    <h2>Content</h2>
+
+    <h1>Title</h1>
+    <h2>Content</h2>
+    <h2>Content</h2>
+
+    <h1>Title</h1>
+    <h2>Content</h2>
+    <h2>Content</h2>
+</body>
+</html>
