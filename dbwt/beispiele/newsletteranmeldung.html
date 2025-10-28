@@ -1,0 +1,69 @@
+<!--
+- Praktikum DBWT. Autoren:
+- Nathanael Lumen, Sukmana, 3718553
+- Joshua, Kortyka, 3714612
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular Anmeldung fuer Newsletter</title>
+</head>
+<body>
+
+<form action="beispiel.formdata.html" method="POST">
+
+    <fieldset>
+        <legend>Anmeldung</legend>
+        <p>Anrede<br>
+        <input type="radio" id="frau" name="Anrede" value="Frau">
+        <label for="frau">Frau</label><br>
+        <input type="radio" id="herr" name="Anrede" value="Herr">
+        <label for="herr">Herr</label></p>
+
+    <div>
+        <label for="vorname">Vorname*</label><br>
+        <input type="text" id="vorname" name="vorname" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="nachname">Nachname*</label><br>
+        <input type="text" id="nachname" name="nachname" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="email">E-Mail*</label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="benachrichtigung">Benachrichtigungsinterval</label><br>
+        <select id="benachrichtigung" name="interval">
+            <option value="Tag">Tag</option>
+            <option value="Woche">Woche</option>
+            <option value="Monat">Monat</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        <input type="checkbox" id="datenschutz" name="datenschutz" required>
+        <label for="datenschutz">Datenschutzhinweise gelesen</label>
+    </div>
+
+    <p><button type="submit">Abschicken</button></p>
+     *) Eingaben sind Pflicht
+    </fieldset>
+
+</form>
+
+</body>
+</html>

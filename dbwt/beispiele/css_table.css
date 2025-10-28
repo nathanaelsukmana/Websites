@@ -1,0 +1,84 @@
+#elektro{
+    font-family: sans-serif;
+    margin-left: 230px;
+}
+
+.elektro > p{
+font-family: sans-serif;
+    margin-left: 230px;
+}
+
+a{
+    color: burlywood;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#etabelle{
+    margin-left: 310px;
+    border-style: solid;
+    border-color:burlywood;
+    opacity: 70%;
+    font-family: sans-serif;
+}
+
+.spalte{
+    background-color: burlywood;
+    opacity: 70%;
+
+}
+
+.extravagant{
+    background-color: burlywood;
+    opacity: 70%;
+}
+
+th,td{
+    padding: 1px;
+
+}
+
+table{
+    width: 50%;
+}
+
+ol{
+line-height: 2em; /* abstand zwischen point */
+}
+
+.center{
+    text-align: center;
+    margin-right: 200px;
+    border-bottom: 2px solid burlywood; /*horizontal linie*/
+    padding: 15px;
+}
+
+
+footer {
+    text-align: right;
+    margin-left: 420px;
+    font-family: sans-serif;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+    position: relative;
+}
+footer ul li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -15px;
+    color: burlywood;
+}
+
+abbr{
+    text-decoration: none;
+}
+

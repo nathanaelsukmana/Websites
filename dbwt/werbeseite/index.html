@@ -1,0 +1,219 @@
+<!--
+- Joshua, Kortyka, 3714612
+- Nathanael Lumen, Sukamana, 3718553
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ihre E-Mensa</title>
+    <style>
+        * {
+            margin: 0 ;
+            padding: 0;
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        .frame{
+            border: 1px solid black;
+            padding: 2px;
+
+
+        }
+        body {
+            display: flex;
+            background: white;
+            color: black;
+            padding: 20px;
+            border: 1px solid black;
+
+        }
+        header {
+            display: flex;
+            justify-content: left;
+            padding: 10px 10px;
+            gap: 45px;
+
+        }
+        main{
+            justify-self: center;
+            width: 70%;
+
+
+        }
+        .logo {
+            border: 1px solid black;
+            padding: 10px 10px;
+            font-weight: bold;
+        }
+
+        links {
+            display: flex;
+            gap: 15px;
+            justify-self: center;
+        }
+
+        links a {
+            color: teal;
+            padding: 8px 15px;
+
+        }
+
+        .info {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .platzhalter {
+            border: 1px solid black;
+            height: 200px;
+            margin: 0 auto 20px;
+        }
+
+        .texte {
+            border: 2px solid black;
+            padding: 10px;
+
+        }
+
+        .menu {
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .menu table {
+            justify-self: center;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .menu th, .menu td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .menu th {
+            background: beige;
+        }
+
+        .zentrum {
+            margin-top: 40px;
+            text-align:left;
+            justify-self: center;
+        }
+
+
+        .margintop{
+            margin-top: 10px;
+        }
+
+        .fussnote{
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="frame">
+    <header>
+        <div class="logo">E-Mensa Logo</div>
+        <div class="frame">
+            <a href="#Ankuendigung">Ankündigung</a>
+            <a href="#Menu">Speisen</a>
+            <a href="#Zahlen">Zahlen</a>
+            <a href="#Kontakt">Kontakt</a>
+            <a href="#Wichtig">Wichtig für uns</a>
+        </div>
+    </header>
+
+    <hr class="margintop" >
+    <main>
+        <div>
+            <div class="platzhalter"></div>
+        </div>
+        <div id="Ankuendigung" class="info">
+            <h1>Bald gibt es Essen auch online ;)</h1>
+            <p class="texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus, ex sed efficitur tincidunt, libero purus feugiat magna, quis dictum sem nisi at erat. Mauris convallis nisi quis elit ullamcorper, vel sollicitudin risus semper. Cras in tincidunt nisi, nec tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec et tellus vel nisi vehicula suscipit. Fusce eleifend felis et mi facilisis, vel bibendum sapien eleifend. In hac habitasse platea dictumst.
+            </p>
+        </div>
+
+        <div id="Menu" class="menu">
+            <h1 >Köstlichkeiten, die Sie erwarten</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th>Gericht</th>
+                    <th>Preis intern</th>
+                    <th>Preis extern</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Rindfleisch mit Bambus, Kaiserschoten und rotem Paprika, dazu Mie Nudeln</td>
+                    <td>3,50</td>
+                    <td>6,20</td>
+                </tr>
+                <tr>
+                    <td>Spinatrissotto mit kleinen Samostateigecken und gemischter Salat</td>
+                    <td>2,90</td>
+                    <td>5,30</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Zahlen" class="info">
+            <h1>E-Mensa in Zahlen</h1>
+            <h2 class="zentrum">
+                <strong>X Besuche &ensp;  &ensp; Y Anmeldungen zum Newsletter &ensp;  &ensp; Z Speisen</strong>
+            </h2>
+        </div>
+
+        <div id="Kontakt" class="info">
+            <h1> Interesse geweckt? Wir informieren Sie!</h1>
+            <br>
+            <span class="margintop">
+            <label for="vorname">Ihr Name:&ensp;&ensp;&ensp;&ensp;</label>
+            <label for="mail">Ihre E-Mail: &ensp; &ensp;</label>
+            <label for="sprache">Newsletter bitte in:</label><br>
+            <input type="text" id="vorname" name="vorname" size="9" required> &ensp;
+            <input type="email" id="mail" name="mail" size="9" required>
+            <select id="sprache" name="sprache" >
+                <option value="deutsch">Deutsch</option>
+                <option value="englisch">English</option>
+            </select> <br>
+            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+            <label for="datenschutz">Den Datenschutzbestimmungen stimme ich zu&ensp;</label>
+            <button type="submit"  disabled> Newsletter anmelden </button>
+        </span>
+        </div>
+        <div id="Wichtig" class="info">
+            <h1>Das ist uns wichtig</h1>
+            <div class="zentrum">
+                <ul class="zentrum">
+                    <li>Beste frische Saisonale Zutaten</li>
+                    <li>Ausgewogene abwechslungsreiche Gerichte</li>
+                    <li>Sauberkeit</li>
+                </ul>
+            </div>
+        </div>
+        <div class="zentrum">
+            <h1>Wir freuen uns auf Ihren Besuch</h1>
+        </div>
+        <hr class="margintop">
+        <div class="fussnote">
+            (c) E-Mensa GmbH &ensp; |&ensp; Nathanael Lumen Sukmana,Joshua Kortyka &ensp;|&ensp;
+            <a href="#" class="links"> Impressum</a>
+
+        </div>
+    </main>
+</div>
+</body>
+</html>
